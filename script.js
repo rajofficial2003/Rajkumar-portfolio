@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typingSpan) {
     const roles = [
       'Full Stack Web Developer',
+      'WordPress & Shopify Developer',
       'React.js & Vite Specialist',
       'Firebase & SQL Architect',
       'Modern UI/UX Developer'
@@ -291,34 +292,25 @@ document.addEventListener('DOMContentLoaded', () => {
       // Enter loading state on submit button
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.disabled = true;
-      submitBtn.innerHTML = `<span>Sending...</span> <div class="btn-spinner"></div>`;
+      submitBtn.style.opacity = '0.75';
+      submitBtn.innerHTML = `<span>Sending to WhatsApp...</span>`;
 
-      // Add a CSS loading spinner helper inside the button
-      const style = document.createElement('style');
-      style.innerHTML = `
-        .btn-spinner {
-          width: 16px;
-          height: 16px;
-          border: 2px dashed #030408;
-          border-radius: 50%;
-          animation: spin 0.8s linear infinite;
-        }
-        @keyframes spin {
-          100% { transform: rotate(360deg); }
-        }
-      `;
-      document.head.appendChild(style);
-
-      // Simulate network request duration
+      // Open WhatsApp after a short delay
       setTimeout(() => {
+        const textMsg = `Hi Rajkumar,\n\n*Name:* ${nameInput.value.trim()}\n*Email:* ${emailInput.value.trim()}\n*Subject:* ${subjectInput.value.trim()}\n*Message:* ${messageInput.value.trim()}`;
+        const waUrl = `https://wa.me/917806844491?text=${encodeURIComponent(textMsg)}`;
+        
+        window.open(waUrl, '_blank');
+        
         // Show the success panel beautifully
         successOverlay.classList.add('active');
         
         // Reset states
         submitBtn.disabled = false;
+        submitBtn.style.opacity = '';
         submitBtn.innerHTML = originalBtnText;
         contactForm.reset();
-      }, 1500);
+      }, 1200);
     });
   }
 
@@ -327,5 +319,31 @@ document.addEventListener('DOMContentLoaded', () => {
       successOverlay.classList.remove('active');
     });
   }
+
+  // ==========================================
+  // 8. LAZY IFRAME BLUR REMOVAL HANDLER
+  // ==========================================
+  const iframes = document.querySelectorAll('.project-iframe');
+
+  const handleIframeLoad = (iframe) => {
+    iframe.classList.add('loaded');
+    const loader = iframe.nextElementSibling;
+    if (loader && loader.classList.contains('iframe-loader')) {
+      loader.classList.add('hidden');
+    }
+  };
+
+  iframes.forEach(iframe => {
+    // Iframes don't have .complete — always attach load listener
+    iframe.addEventListener('load', () => handleIframeLoad(iframe));
+    // Fallback: if already loaded (same-origin cache hit)
+    try {
+      if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+        handleIframeLoad(iframe);
+      }
+    } catch (e) {
+      // Cross-origin iframes will throw on contentDocument access — ignore
+    }
+  });
 
 });
