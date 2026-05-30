@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajkumar D | Full Stack Web Developer & UI Designer</title>
+  
+  <!-- SEO Optimization & Meta Tags -->
+  <meta name="description" content="Portfolio of Rajkumar D, a Full Stack Web Developer specializing in React.js, Vite, and Firebase. Based in Tiruvannamalai, Tamil Nadu.">
+  <meta name="keywords" content="Rajkumar D, Full Stack Developer, React.js, Vite, Firebase, Web Developer Portfolio, India, Tamil Nadu">
+  <meta name="author" content="Rajkumar D">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.codewithraj.in">
+  <meta property="og:title" content="Rajkumar D | Full Stack Web Developer">
+  <meta property="og:description" content="Explore modern, responsive e-commerce, payroll management, and school management platforms crafted by Rajkumar D.">
+  <meta property="og:image" content="https://v0-codewithraj.vercel.app/placeholder.svg?height=400&width=600">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Futuristic Particle Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Backdrop Lights -->
+  <div class="ambient-glows">
+    <div class="glow-circle glow-circle-1"></div>
+    <div class="glow-circle glow-circle-2"></div>
+  </div>
+
+  <!-- ==========================================
+     STICKY NAVIGATION GLASS HEADER
+     ========================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="nav-logo">Rajkumar<span>.D</span></a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Hire Me</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-toggle" aria-label="Toggle Menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+     HERO BANNER SECTION
+     ========================================== -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-mono">// Welcome to my digital workspace</span>
+        <h1 class="hero-title">
+          Hi, I'm <span class="name">Rajkumar D</span>
+        </h1>
+        <div class="hero-typing">
+          <span class="typing-text">Full Stack Web Developer</span>
+        </div>
+        <p class="hero-desc">
+          I craft fast, visually stunning, and highly secure digital solutions. Specializing in frontend performance optimization, bento interface layouts, and reliable database operations.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="cta-contact-btn">
+            Get In Touch
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#projects" class="btn btn-secondary" id="cta-projects-btn">View Projects</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Rajkumar2k3" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub" id="social-github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn" id="social-linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:rajkumardurai2003@gmail.com" class="social-btn" aria-label="Email" id="social-email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          </a>
+          <a href="https://www.codewithraj.in" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Website" id="social-website">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-sphere"></div>
+        <div class="visual-avatar">&lt;/&gt;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     BENTO ABOUT & KEY STATISTICS
+     ========================================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Discover my journey</span>
+        <h2 class="section-title" id="about-title">About Me</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Biography & Quick Numbers -->
+        <div class="glass-card bento-card bento-about-text" id="bento-bio-card">
+          <div>
+            <h3>Who I Am</h3>
+            <p>
+              I am a results-oriented Full Stack Developer with 1+ year of professional experience, specializing in frontend architectures and responsive web systems. I excel at building high-performance, dynamic platforms using modern Javascript ecosystems.
+            </p>
+            <p style="margin-top: 1rem;">
+              My expertise covers the entire lifecycle of software engineering: starting from wireframing intuitive bento boxes to configuring lightning-fast cloud backups with Firebase and indexing structured SQL tables.
+            </p>
+          </div>
+          
+          <div class="stats-grid-inner">
+            <div class="stat-item">
+              <span class="stat-num">1+</span>
+              <span class="stat-lbl">Year Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">15+</span>
+              <span class="stat-lbl">Finished Sites</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-lbl">Client Score</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">4+</span>
+              <span class="stat-lbl">Large Software</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Contacts Glass Card -->
+        <div class="glass-card bento-card bento-contact-info" id="bento-details-card">
+          <h3>Contact Channels</h3>
+          
+          <ul class="contact-details-list">
+            <li class="contact-detail-item">
+              <div class="detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="detail-content">
+                <span>Location</span>
+                <p>Tiruvannamalai, India - 606902</p>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </div>
+              <div class="detail-content">
+                <span>Email Address</span>
+                <a href="mailto:rajkumardurai2003@gmail.com">rajkumardurai2003@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              </div>
+              <div class="detail-content">
+                <span>Web Domain</span>
+                <a href="https://www.codewithraj.in" target="_blank" rel="noopener noreferrer">www.codewithraj.in</a>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="detail-icon" aria-hidden="true">
+                <span>📞</span>
+              </div>
+              <div class="detail-content">
+                <span>Call Hotline</span>
+                <a href="tel:+917806844491">+91 7806844491</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SKILLS DASHBOARD
+     ========================================== -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">My Stack Profile</span>
+        <h2 class="section-title" id="skills-title">Technical Expertise</h2>
+      </div>
+
+      <p class="skills-intro">
+        I command a varied array of tech tools designed to deliver fast loading times, robust backends, and flawless layouts.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Card 1: Frontend -->
+        <div class="glass-card skill-category-card" id="skills-frontend-card">
+          <div class="skill-category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+            </div>
+            <h3>Front End</h3>
+          </div>
+          
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML & CSS</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 95%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Javascript (ES6)</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 88%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 82%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Vite Environment</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 85%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Bootstrap 5 / Tailwind</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 90%;"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Backend & Database -->
+        <div class="glass-card skill-category-card" id="skills-backend-card">
+          <div class="skill-category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
+            </div>
+            <h3>Backend & Cloud</h3>
+          </div>
+          
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js / Express</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 75%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PHP Language</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 68%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">NoSQL (Firebase)</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 86%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL (MySQL)</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 78%;"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Architecture & Tools -->
+        <div class="glass-card skill-category-card" id="skills-tools-card">
+          <div class="skill-category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" x2="12" y1="22.08" y2="12"></line></svg>
+            </div>
+            <h3>Workflow & Tools</h3>
+          </div>
+          
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & Versioning</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 88%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">VS Code Environment</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 90%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Firebase / Netlify Hosting</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 84%;"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">English & Tamil</span>
+              </div>
+              <div class="skill-meter"><div class="skill-fill" style="width: 92%;"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     FUTURISTIC TIMELINE (WORK EXPERIENCE)
+     ========================================== -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">My Career Route</span>
+        <h2 class="section-title" id="experience-title">Work Experience</h2>
+      </div>
+
+      <div class="timeline-outer">
+        <!-- Experience Node -->
+        <div class="timeline-node" id="exp-node-jk">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          
+          <div class="glass-card timeline-content">
+            <div class="timeline-header">
+              <div class="company-box">
+                <h3>JK GLOBAL IT SOLUTION</h3>
+                <span class="role-tag">Full Stack Developer Specialist</span>
+              </div>
+              <div class="timeline-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+                <span>2024 April - Present</span>
+              </div>
+            </div>
+
+            <div class="timeline-body">
+              <!-- Sub-Project 1 -->
+              <div class="project-block">
+                <h4>HRify - Payroll Management Software</h4>
+                <ul>
+                  <li>Engineered employee metrics panel from scratch, implementing automated GPS-guided attendance tracking for precise workspace check-ins.</li>
+                  <li>Coded automatic payout processors that adjust salaries depending on real-time leave patterns and short-term pay advances.</li>
+                </ul>
+              </div>
+
+              <!-- Sub-Project 2 -->
+              <div class="project-block">
+                <h4>School Administration Platform (Ongoing)</h4>
+                <ul>
+                  <li>Optimizing administrative frameworks, designing student registry portals, and handling teachers' work rosters.</li>
+                  <li>Structuring billing software modules to easily record invoice structures and generate comprehensive financial performance sheets.</li>
+                </ul>
+              </div>
+
+              <!-- Sub-Project 3 -->
+              <div class="project-block">
+                <h4>Dynamic Room Booking Project</h4>
+                <ul>
+                  <li>Assembled a fast-paced room registry system including beautiful User and Admin terminals.</li>
+                  <li>Incorporated real-time updates using Firebase Firestore, custom hour options, and lightweight layouts.</li>
+                </ul>
+              </div>
+
+              <!-- Sub-Project 4 -->
+              <div class="project-block">
+                <h4>Tailored Business & Real Estate Systems</h4>
+                <ul>
+                  <li>Built 10+ fast business landing zones (Security portfolios, electronic repairs, marriage halls, real estate lists).</li>
+                  <li>Configured interactive filter grids so customers can browse local property options with zero delay.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     FEATURED PROJECTS BENTO GRID
+     ========================================== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">My Creative Proof</span>
+        <h2 class="section-title" id="projects-title">Featured Projects</h2>
+      </div>
+
+      <!-- Filters Nav Menu -->
+      <div class="projects-filters">
+        <button class="filter-btn active" data-filter="all" id="btn-filter-all">All</button>
+        <button class="filter-btn" data-filter="fullstack" id="btn-filter-fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="business" id="btn-filter-business">Business</button>
+        <button class="filter-btn" data-filter="utility" id="btn-filter-utility">Utilities</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Card 1: Spicy Garments -->
+        <div class="project-card-wrapper" data-category="fullstack" id="proj-card-spicy">
+          <div class="glass-card project-card">
+            <div class="project-image-box">
+              <div class="project-cover-art" aria-hidden="true">&lt;SG/&gt;</div>
+            </div>
+            <div class="project-info-box">
+              <h3>Spicy Garments</h3>
+              <p>Complete e-commerce platform with elegant User interfaces and Admin consoles. Structured product catalog lists with Firebase backups.</p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Vite</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://spicy-garments.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Visit Site 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Catering Ordering -->
+        <div class="project-card-wrapper" data-category="fullstack" id="proj-card-catering">
+          <div class="glass-card project-card">
+            <div class="project-image-box">
+              <div class="project-cover-art" aria-hidden="true">&lt;CT/&gt;</div>
+            </div>
+            <div class="project-info-box">
+              <h3>Catering Service Portal</h3>
+              <p>Clean booking system featuring WhatsApp instant ordering links and dynamically compiled billing sheets generated in high-quality PDF.</p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Vite</span>
+                <span class="project-tag">PDF.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fir-catering.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Visit Site 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: QR Generator -->
+        <div class="project-card-wrapper" data-category="utility" id="proj-card-qr">
+          <div class="glass-card project-card">
+            <div class="project-image-box">
+              <div class="project-cover-art" aria-hidden="true">&lt;QR/&gt;</div>
+            </div>
+            <div class="project-info-box">
+              <h3>QR Generator</h3>
+              <p>Web app featuring real-time code rendering, image generation, custom resolution values, and quick PNG downloads.</p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Vite</span>
+                <span class="project-tag">Netlify</span>
+              </div>
+              <div class="project-links">
+                <a href="https://teal-bublanina-f724e9.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Visit Site 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: TN Light Art -->
+        <div class="project-card-wrapper" data-category="business" id="proj-card-neon">
+          <div class="glass-card project-card">
+            <div class="project-image-box">
+              <div class="project-cover-art" aria-hidden="true">&lt;LA/&gt;</div>
+            </div>
+            <div class="project-info-box">
+              <h3>TN Light Art</h3>
+              <p>Premium showcase business website for beautiful custom Neon Sign Boards, highlighting custom design filters and WhatsApp contact pathways.</p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Tailwind</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link" style="color: var(--text-muted); cursor: not-allowed;">Ongoing Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: HRify software -->
+        <div class="project-card-wrapper" data-category="fullstack" id="proj-card-hrify">
+          <div class="glass-card project-card">
+            <div class="project-image-box">
+              <div class="project-cover-art" aria-hidden="true">&lt;HR/&gt;</div>
+            </div>
+            <div class="project-info-box">
+              <h3>HRify Payroll Portal</h3>
+              <p>Full HR platform featuring GPS location verification, automatic calendar leave counters, and instant pay disbursements.</p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link" style="color: var(--text-muted); cursor: not-allowed;">Internal Software</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: School Management System -->
+        <div class="project-card-wrapper" data-category="fullstack" id="proj-card-school">
+          <div class="glass-card project-card">
+            <div class="project-image-box">
+              <div class="project-cover-art" aria-hidden="true">&lt;SM/&gt;</div>
+            </div>
+            <div class="project-info-box">
+              <h3>School Manager</h3>
+              <p>Comprehensive registry software focusing on student databases, teacher schedules, automated invoices, and billing statements.</p>
+              <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Vite</span>
+                <span class="project-tag">Express</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link" style="color: var(--text-muted); cursor: not-allowed;">Enterprise Platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     EDUCATION & CERTIFICATIONS HUB
+     ========================================== -->
+  <section id="education" class="education">
+    <div class="container edu-grid">
+      <!-- Left Track: Academics -->
+      <div id="edu-left-track">
+        <div class="edu-block-header">
+          <div class="hub-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+          </div>
+          <h3>Education Path</h3>
+        </div>
+
+        <div class="edu-list">
+          <div class="glass-card edu-card">
+            <div class="edu-icon-box" aria-hidden="true">🎓</div>
+            <div class="edu-details">
+              <h4>Kaashiv Infotech</h4>
+              <p class="edu-school">Full Stack Web Developer Professional Certificate</p>
+              <div class="edu-meta">
+                <span>2023 March - 2023 July</span>
+                <span>Chennai, TN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card edu-card">
+            <div class="edu-icon-box" aria-hidden="true">🎓</div>
+            <div class="edu-details">
+              <h4>Shanmuga Industries Arts and Science College</h4>
+              <p class="edu-school">Bachelor of Science in Physics (B.Sc)</p>
+              <div class="edu-meta">
+                <span>2020 - 2023</span>
+                <span>Tiruvannamalai, TN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card edu-card">
+            <div class="edu-icon-box" aria-hidden="true">🎓</div>
+            <div class="edu-details">
+              <h4>Dhivya Matric Higher Secondary School</h4>
+              <p class="edu-school">Higher Secondary Certificate (HSC)</p>
+              <div class="edu-meta">
+                <span>2019 - 2020</span>
+                <span>Tiruvannamalai, TN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Track: Certifications -->
+      <div id="edu-right-track">
+        <div class="edu-block-header">
+          <div class="hub-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Certificates</h3>
+        </div>
+
+        <div class="edu-list">
+          <div class="glass-card edu-card" style="border-color: rgba(168, 85, 247, 0.25);">
+            <div class="edu-icon-box" style="color: var(--accent-purple);" aria-hidden="true">★</div>
+            <div class="edu-details">
+              <h4>Full Stack Developer Certification</h4>
+              <p class="edu-school">KAASHIV INFOTECH</p>
+              <div class="edu-meta">
+                <span>Issued: March 2023</span>
+              </div>
+              <span class="cert-id-badge">Credential ID: KA-Pecpj</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     CONTACT SIDEBAR & MODERN FORM
+     ========================================== -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <!-- Sidebar Channels Info -->
+      <div class="contact-sidebar">
+        <div class="contact-intro">
+          <h3>Let's collaborate</h3>
+          <p>Have an open project opportunity or simply want to inquire about custom software development? Reach out to me below!</p>
+        </div>
+
+        <div class="sidebar-cards">
+          <div class="glass-card sidebar-contact-card" id="contact-side-phone">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div class="contact-info-block">
+              <span>Direct Phone</span>
+              <a href="tel:+917806844491">+91 7806844491</a>
+            </div>
+          </div>
+
+          <div class="glass-card sidebar-contact-card" id="contact-side-email">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </div>
+            <div class="contact-info-block">
+              <span>Send Email</span>
+              <a href="mailto:rajkumardurai2003@gmail.com">rajkumardurai2003@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="glass-card sidebar-contact-card" id="contact-side-loc">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-info-block">
+              <span>Location</span>
+              <p>Tiruvannamalai, Tamil Nadu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clean Glowing Glass Form -->
+      <div class="glass-card contact-form-container" style="position: relative;">
+        <h3 class="form-title">Send Me a Message</h3>
+        
+        <form id="portfolio-contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="Inquiry about static page build" required>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Hi Rajkumar, I would love to build a..." required></textarea>
+            </div>
+          </div>
+
+          <div class="submit-btn-wrapper">
+            <button type="submit" class="btn btn-primary" id="form-submit-btn" style="border: none;">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Dynamic Success Feedback Screen Overlay -->
+        <div class="form-success-overlay">
+          <div class="success-icon-box" aria-hidden="true">✔</div>
+          <h4 class="success-title">Message Received!</h4>
+          <p class="success-text">Thank you for writing! I have received your email and will reach out to you within 24 hours.</p>
+          <button type="button" class="btn btn-secondary" id="reset-form-btn">Send Another Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     GLOWING MINIMAL FOOTER
+     ========================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="copyright">
+        <p>&copy; 2026 Rajkumar D. All rights reserved.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="https://github.com/Rajkumar2k3" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+        <li><a href="https://www.codewithraj.in" target="_blank" rel="noopener noreferrer" class="footer-link">Website</a></li>
+        <li><a href="#home" class="footer-link">Home</a></li>
+      </ul>
+
+      <button class="back-to-top" id="scroll-to-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
